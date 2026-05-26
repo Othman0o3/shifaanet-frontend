@@ -1,3 +1,12 @@
+:root{
+  --primary: #2b6fa6;
+  --primary-dark: #113a5b;
+  --background: #f0f6fa;
+  --card-bg: #ffffff;
+  --text: #222;
+  --accent-gradient: linear-gradient(135deg, #2b6fa6 0%, #4ac1ff 100%);
+}
+
 .App {
   text-align: center;
 }
@@ -27,7 +36,9 @@
 .App-link {
   color: #61dafb;
 }
-
+.triangle {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
