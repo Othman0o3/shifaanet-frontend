@@ -1,70 +1,129 @@
-# Getting Started with Create React App
+# شفاء نت — Shifaa Net | Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **A digital healthcare access platform for Libya**  
+> Graduation Project · Alhadira University · Grade: 90%
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This is the React frontend for Shifaa Net — a digital health platform designed to connect Libyan patients with hospitals, laboratories, and vaccination centres through a single unified interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+For the full project description, features, and context see the backend repo:  
+👉 [shifaanet-backend](https://github.com/Othman0o3/shifaanet-backend)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home Page
+![Home Page](screenshots/home.png)
 
-### `npm run build`
+### Hospital Booking
+![Booking](screenshots/booking.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Lab Results
+![Lab Results](screenshots/lab.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Vaccination Centre Locator
+![Vaccine Locator](screenshots/vaccine.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Layer | Technology |
+|-------|-----------|
+| Framework | React |
+| State Management | Context API |
+| Styling | Tailwind CSS |
+| HTTP Client | Axios |
+| Routing | React Router |
+| Build Tool | Create React App |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 🏥 Browse and book hospital appointments
+- 💻 Join online video consultations
+- 🧪 View and download lab test results
+- 💉 Search vaccination centres by vaccine availability
+- 🔐 Patient authentication and account management
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Running Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+- Node.js 16+
+- yarn or npm
+- Backend server running at `http://localhost:9000`
 
-### Code Splitting
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# Clone the repo
+git clone https://github.com/Othman0o3/shifaanet-frontend.git
+cd shifaanet-frontend
 
-### Analyzing the Bundle Size
+# Install dependencies
+yarn install
+# or
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Start the development server
+yarn start
+# or
+npm start
+```
 
-### Making a Progressive Web App
+The frontend will be available at `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> Make sure the backend is running at `http://localhost:9000` before starting the frontend.
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Structure
 
-### Deployment
+```
+src/
+├── api/
+│   └── axiosInstance.js     # Axios config with base URL and interceptors
+├── assets/                  # Images and static assets
+├── components/              # Reusable UI components
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── BookingModal.jsx
+│   ├── Dcards.jsx
+│   ├── HLVcards.jsx
+│   └── Filter.jsx
+├── pages/                   # Page-level components
+│   ├── Main.jsx             # Landing page
+│   ├── Hospitals.jsx        # Hospital listing
+│   ├── DoctorsPage.jsx      # Doctor listing
+│   ├── LabsPage.jsx         # Laboratory listing
+│   ├── VaccCentersPage.jsx  # Vaccination centre locator
+│   ├── DetailPage.jsx       # Entity detail view
+│   ├── RoomPage.jsx         # Video consultation room
+│   ├── LoginPage.jsx
+│   ├── SignupPage.jsx
+│   └── MyAccountPage.jsx
+└── utils/
+    └── api.js               # API helper functions
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Academic Context
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This frontend was built as part of the Shifaa Net graduation project at Alhadira University, Tripoli, Libya (Fall 2025). The project was awarded a grade of **90%**.
+
+> **Note:** This is currently an academic proposal project, not yet deployed in production.
+
+---
+
+## Developer
+
+**Othman Elalem** — Full Stack Software Engineer, Tripoli, Libya  
+[github.com/Othman0o3](https://github.com/Othman0o3)
